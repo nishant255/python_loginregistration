@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Welcome {{ request.session.user_first_name| title }}</title>
+    </head>
+    <body>
+        <h1>Welcome {{ request.session.user_first_name| title }}</h1>
+        <p>You're Logged In</p>
+        <a href="/logout">Log Out</a>
+    </body>
+</html>
